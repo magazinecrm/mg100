@@ -50,8 +50,11 @@ const Home = () =>
     <Layout pageTitle="Software for Magazine Publishers . Magazinecrm">
      <BannerOne/>
     
-     
+     <CtaAbout isScrollActive />     
 <ServiceOne /> 
+
+
+
      <CtaThree />
     
       <PricingOne />

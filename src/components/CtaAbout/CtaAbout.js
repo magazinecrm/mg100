@@ -7,18 +7,14 @@ import TextSplit from "../Reuseable/TextSplit";
 const { image, title, text, lists } = ctaAbout;
 
 const CtaAbout = () => {
-const ref = useActive("#services")
+const ref = useActive("#servicesz")
 
   
   return (
-    <section className="cta-three">
+    <section className="cta-three" id="services">
       <Container>
         <Row>
-          <Col lg={6}>
-            <div className="cta-three__image">
-              <Image src={image.src} alt="Awesome Image" />
-            </div>
-          </Col>
+    
           <Col lg={6}>
             <div className="cta-three__content">
               <div className="block-title text-left">
@@ -30,14 +26,12 @@ const ref = useActive("#services")
               <ul className="cta-three__list">
                 {lists.map((text, i) => (
                   <li key={i} className="cta-three__list-item">
-                    <i className="fa fa-check"></i>
+              
                     {text}
                   </li>
                 ))}
               </ul>
-              <a href="#" className="thm-btn cta-three__btn">
-             
-              </a>
+         
             </div>
           </Col>
         </Row>
