@@ -5,18 +5,12 @@ export default function Document() {
   return (
     <Html>
 
-
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-		<script
+<Head>
+	<script
 		async
 		src={'https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}'}
         />
-		
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <script
+		  <script
           dangerouslySetInnerHTML={{
             __html: `
             window.dataLayer = window.dataLayer || [];
@@ -26,6 +20,14 @@ export default function Document() {
           `,
           }}
         />
+      </Head>
+      <body>
+        <Main />
+        <NextScript />
+	
+		
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
+      
       </body>
     </Html>
   )
