@@ -4,8 +4,7 @@ import image from "@/images/blog-d-1-1.jpg";
 const blogDetailsPage = {
   blog: {
     image,
-    admin: "admin",
-    date: "4 Aug",
+    
     comments: [
       {
         id: 1,

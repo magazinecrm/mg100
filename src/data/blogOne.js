@@ -3,7 +3,7 @@ const blogOne = {
   blogs: [
     {
       id: 1,
-      title: "Subscription_Manager",
+      title: "Subscription_Manager ,Click to know  More ",
       image: "ac.jpg",
       admin: "",
       date: "4 Aug",

@@ -16,39 +16,52 @@ import ServiceOne from "@/components/ServiceOne/ServiceOne";
 import TestimonialsOne from "@/components/TestimonialsOne/TestimonialsOne";
 import React from "react";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+import axios from "axios";
 
+
+
+
+  
 const Home = () => 
 
   {
-    const [firstName, setFirstName] = useState("");
+    const {
+      register,
+      handleSubmit,
+      formState: { isSubmitting },
+    } = useForm();
+    const [successMessage, setSuccessMessage] = useState("");
+    function onSubmit(data) {
+      axios
+        .post("https://eockr1qt61dbxzp.m.pipedream.net", data)
+        .then((response) => {
+          setSuccessMessage(
+            `Thanks for signing up! Check your inbox for updates 😊`
+          );
+        })
+        .catch((e) => console.error(e));
+    }
+   
   
-    const resetInputFields = () => {
-      setTimeout(() => {
-        setFirstName("");
-      }, 3000);
-    };
+   
   
-    const submitHandler = async (e) => {
-      e.preventDefault();
-      try {
-        const body = {firstName};
-        await fetch("/api/create", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(body),
-        });
-      console.log('bbebebeebe');
-    
-      alert('aaaa')
-     
-      } catch (error) {
-        console.error(error);
-      }
-    };
+   
 
   return (
     <Layout pageTitle="Software for Magazine Publishers . Magazinecrm">
      <BannerOne/>
+     <form onSubmit={handleSubmit(onSubmit)}>
+      <h4>Join our newsletter!</h4>
+
+      <input {...register("email")} defaultValue="me@gmail.com"></input>
+    
+     
+     
+
+      <button role="submit">{isSubmitting ? "Submitting" : "Submit"}</button>
+      {successMessage && <p>{successMessage}</p>}
+    </form>
     
      <CtaAbout isScrollActive />     
 <ServiceOne /> 
