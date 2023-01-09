@@ -7,69 +7,20 @@ const footerData = {
   links: [
     {
       id: 1,
-      name: "About",
-      href: "#services",
+      name: "Managing_Subscribers",
+      href: "subscriber_manager",
     },
     {
       id: 2,
-      name: "Our Team",
-      href: "#services",
+      name: "Managing advertisers",
+      href: "advertiser_manager",
     },
     {
       id: 3,
-      name: "Features",
-      href: "#",
-    },
-    {
-      id: 4,
-      name: "Blog",
-      href: "#",
-    },
-    {
-      id: 5,
-      name: "How It Works",
-      href: "#",
-    },
-    {
-      id: 6,
-      name: "Increasing subscribes using our software",
-      href: "#",
-    },
-    {
-      id: 7,
       name: "Marketing Module with leadmodule",
-      href: "#",
+      href: "lead_manager",
     },
-    {
-      id: 8,
-      name: "Adveritsement manager",
-      href: "#",
-    },
-    {
-      id: 9,
-      name: "Accounting",
-      href: "#",
-    },
-    {
-      id: 10,
-      name: "Help",
-      href: "#",
-    },
-    {
-      id: 11,
-      name: "Support",
-      href: "#",
-    },
-    {
-      id: 12,
-      name: "Clients",
-      href: "#",
-    },
-    {
-      id: 13,
-      name: "Contact",
-      href: "#",
-    },
+   
   ],
   socials: [
     {

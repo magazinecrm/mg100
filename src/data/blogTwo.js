@@ -1,12 +1,12 @@
-const blogOne = {
-  title: "Magazine crm products to make your life easy \n",
+const blogTwo = {
+  title: "",
   blogs: [
     {
       id: 1,
-      title: "Subscription_Manager ,Click to know  More ",
-      image: "ac.jpg",
+      title: "ADMAN Advertser_manager ,Click to know  More ",
+      image: "ad.jpg",
       admin: "",
-      date: "4 Aug",
+      date: "",
       comments: 0,
     },
     {
@@ -21,4 +21,4 @@ const blogOne = {
   ],
 };
 
-export default blogOne;
+export default blogTwo;

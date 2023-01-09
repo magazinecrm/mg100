@@ -15,7 +15,7 @@ const SingleBlog = ({ blog = {} }) => {
               src={require(`src/assets/images/${image}`).default.src}
               alt="Awesome Image"
             />
-            <Link href="/subscriber_manager">
+            <Link href="/lead_manager">
               <a className="blog-one__link">Read zMore</a>
             </Link>
           </div>
@@ -24,7 +24,7 @@ const SingleBlog = ({ blog = {} }) => {
         <div className="blog-one__content">
           <div className="blog-one__meta">
             <Link href="asubscriber_manager">
-              <a className="blog-one__meta-link">By {admin}</a>
+              <a className="blog-one__meta-link"> {admin}</a>
             </Link>
             <span className="blog-one__meta-sep">.</span>
             <Link href="/bsubscriber_manager">
@@ -32,12 +32,12 @@ const SingleBlog = ({ blog = {} }) => {
             </Link>
             <span className="blog-one__meta-sep">.</span>
             <Link href="/csubscriber_manager">
-              <a className="blog-one__meta-link">{comments} comments</a>
+              <a className="blog-one__meta-link">{comments} </a>
             </Link>
           </div>
 
           <h3 className="blog-one__title">
-            <Link href="/subscriber_managerz">
+            <Link href="/lead_manager">
               <a>
                 <TextSplit text={title} />
               </a>

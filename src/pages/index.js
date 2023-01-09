@@ -1,6 +1,8 @@
 import dynamic from "next/dynamic";
 import BannerOne from "@/components/BannerOne/BannerOne";
 import BlogOne from "@/components/BlogOne/BlogOne";
+import BlogTwo from "@/components/BlogTwo/BlogTwo";
+import BlogThree from "@/components/BlogThree/BlogThree";
 const BrandOneWithNoSSR = dynamic(
   () => import("@/components/BrandOne/BrandOne"),
   { ssr: false }
@@ -106,7 +108,12 @@ const Home = () =>
     
       <BlogOne totalBlogs={1} isScrollActive />
    
+     <BlogTwo totalBlogs={1} isScrollActive />
+
+        <BlogThree totalBlogs={1} isScrollActive />
+
       <CtaOne isScrollActive />
+
       
     </Layout>
 
